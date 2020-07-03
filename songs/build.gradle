@@ -1,0 +1,58 @@
+apply from: rootProject.file('android-modules-common-config.gradle')
+apply plugin: 'androidx.navigation.safeargs'
+apply plugin: 'dagger.hilt.android.plugin'
+
+android {
+
+    dataBinding {
+        enabled = true
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    defaultConfig {
+        vectorDrawables.useSupportLibrary = true
+    }
+
+}
+
+dependencies {
+    implementation(
+            Dependencies.constraintLayout,
+            Dependencies.appCompat,
+            Dependencies.materialDesign,
+            Dependencies.androidXVectorDrawables,
+
+            Dependencies.androidXCoreKts,
+            Dependencies.fragmentKts,
+            Dependencies.navFragmentKts,
+            Dependencies.navUIKts,
+            Dependencies.navFragment,
+            Dependencies.navUI,
+            Dependencies.legacySupport,
+            Dependencies.lifecycleExt,
+            Dependencies.lifecycleViewModelKts,
+            Dependencies.viewPager,
+            Dependencies.timber,
+
+            Dependencies.coroutines,
+            Dependencies.coroutinesAndroid,
+
+            Dependencies.rxJava,
+            Dependencies.rxAndroid,
+
+            Dependencies.daggerHilt,
+
+            Dependencies.threeTenAndroidBackport,
+
+            project(Modules.repository),
+            project(Modules.entities),
+            project(Modules.common)
+    )
+
+    kapt(
+            Dependencies.daggerHiltCompiler
+    )
+}

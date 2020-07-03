@@ -1,0 +1,40 @@
+apply from: rootProject.file('android-modules-common-config.gradle')
+apply plugin: 'dagger.hilt.android.plugin'
+
+android {
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    dataBinding {
+        enabled = true
+    }
+
+}
+
+dependencies {
+    implementation(
+            Dependencies.constraintLayout,
+            Dependencies.appCompat,
+            Dependencies.materialDesign,
+
+            Dependencies.navFragmentKts,
+            Dependencies.navUIKts,
+            Dependencies.fragmentKts,
+
+            Dependencies.coroutines,
+            Dependencies.coroutinesAndroid,
+
+            Dependencies.rxJava,
+            Dependencies.rxAndroid,
+
+            Dependencies.daggerHilt,
+
+            Dependencies.threeTenAndroidBackport
+    )
+
+    kapt(
+            Dependencies.daggerHiltCompiler
+    )
+}

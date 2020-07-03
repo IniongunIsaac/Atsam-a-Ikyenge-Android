@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "347241247932",
+    "firebase_url": "https://atsam-a-ikyenge.firebaseio.com",
+    "project_id": "atsam-a-ikyenge",
+    "storage_bucket": "atsam-a-ikyenge.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:347241247932:android:d8a04aaaa854821803ccb9",
+        "android_client_info": {
+          "package_name": "com.iniongungroup.mobile.droid.atsamaikyenge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "347241247932-d62bruns53c2kh57oompu9l70m2n2boj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBwBTY41-FZ44s16zknXHLG5ENJsLKTNSo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "347241247932-d62bruns53c2kh57oompu9l70m2n2boj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

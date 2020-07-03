@@ -1,0 +1,20 @@
+apply from: rootProject.file('android-modules-common-config.gradle')
+
+dependencies {
+    implementation(
+            Dependencies.gson,
+
+            Dependencies.threeTenAndroidBackport,
+
+            Dependencies.javax,
+            Dependencies.javaxAnnotation,
+
+            project(Modules.repository),
+            project(Modules.common)
+    )
+
+    androidTestImplementation(
+            Dependencies.espresso,
+            Dependencies.espressoContrib
+    )
+}

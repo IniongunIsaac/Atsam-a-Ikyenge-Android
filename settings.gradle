@@ -1,0 +1,8 @@
+include ':songs'
+include ':common'
+include ':localdatasource'
+include ':repository'
+include ':preferences'
+include ':entities'
+include ':app'
+rootProject.name = "Atsam a Ikyenge"

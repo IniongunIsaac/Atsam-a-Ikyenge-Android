@@ -1,0 +1,59 @@
+apply from: rootProject.file('android-modules-common-config.gradle')
+
+android {
+
+    defaultConfig {
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = ["room.schemaLocation":
+                                     "$projectDir/schemas".toString()]
+            }
+        }
+    }
+
+    sourceSets {
+        androidTest.assets.srcDirs += files("$projectDir/schemas".toString())
+    }
+
+    kotlinOptions {
+        jvmTarget = "1.8"
+    }
+
+    packagingOptions {
+        exclude 'META-INF/LICENSE.md'
+        exclude 'META-INF/LICENSE-notice.md'
+    }
+
+}
+
+dependencies {
+
+    implementation(
+
+            Dependencies.gson,
+            Dependencies.threeTenAndroidBackport,
+
+            project(Modules.repository)
+    )
+
+    api(
+            Dependencies.room,
+            Dependencies.roomRx,
+    )
+
+    kapt(
+            Dependencies.roomCompiler
+    )
+
+    androidTestImplementation(
+            Dependencies.roomTesting
+    )
+
+    testImplementation(Dependencies.threeTenBackport) {
+        //exclude group:'com.jakewharton.threetenabp', module:'threetenabp'
+        exclude module: Dependencies.threeTenAndroidBackport
+        exclude group: "org.threeten.bp", module: "threetenbp-1.4.0-no-tzdb-no-tzdb"
+    }
+
+}
