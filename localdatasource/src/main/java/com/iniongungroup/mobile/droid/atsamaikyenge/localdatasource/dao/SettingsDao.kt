@@ -12,7 +12,7 @@ import io.reactivex.Single
  */
 
 @Dao
-interface SettingDao {
+interface SettingsDao {
 
     @Query("select * from Setting")
     fun getAllSettings(): Observable<List<Setting>>

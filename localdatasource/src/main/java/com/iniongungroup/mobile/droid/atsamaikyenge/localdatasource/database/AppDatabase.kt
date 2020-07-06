@@ -34,11 +34,11 @@ abstract class AppDatabase : RoomDatabase() {
 
     abstract fun fontStyleDao(): FontStyleDao
 
-    abstract fun settingDao(): SettingDao
+    abstract fun settingDao(): SettingsDao
 
     abstract fun themeDao(): ThemeDao
 
-    abstract fun songDao(): SongDao
+    abstract fun songDao(): SongsDao
 
     abstract fun favoritesDao(): FavoriteDao
 

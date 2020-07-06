@@ -1,6 +1,5 @@
-package com.iniongungroup.mobile.droid.atsamaikyenge.localdatasource.dao
+package com.iniongungroup.mobile.droid.atsamaikyenge.repository.localdatasource.songs
 
-import androidx.room.*
 import com.iniongungroup.mobile.droid.atsamaikyenge.entities.Song
 import io.reactivex.Completable
 import io.reactivex.Observable
@@ -11,25 +10,16 @@ import io.reactivex.Single
  * For Atsam a Ikyenge project.
  */
 
-@Dao
-interface SongDao {
+interface ISongsRepo {
 
-    @Query("select * from Song")
     fun getAllSongs(): Observable<List<Song>>
 
-    @Query("select * from Song where id = :songId limit 1")
     fun getSongById(songId: String): Single<Song>
 
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
-    fun insertSongs(vararg songs: Song): Completable
-
-    @Insert(onConflict = OnConflictStrategy.REPLACE)
     fun insertSongs(songs: List<Song>): Completable
 
-    @Delete
     fun deleteSongs(songs: List<Song>): Completable
 
-    @Query("delete from Song")
     fun deleteSongs(): Completable
-    
+
 }
