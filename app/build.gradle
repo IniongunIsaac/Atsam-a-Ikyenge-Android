@@ -51,8 +51,8 @@ android {
         }
     }
 
-    dataBinding {
-        enabled = true
+    buildFeatures {
+        dataBinding = true
     }
 
     testOptions {
@@ -92,6 +92,7 @@ dependencies {
             Dependencies.multiDex,
 
             Dependencies.daggerHilt,
+            Dependencies.hiltLifeCycleViewModel,
 
             Dependencies.firebaseAnalytics,
             Dependencies.firebasePerformanceMonitoring,

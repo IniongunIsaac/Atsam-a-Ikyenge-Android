@@ -31,6 +31,7 @@ object DepVersions {
     const val retrofitCoroutinesAdapter = "0.9.2"
     const val dagger = "2.25.3"
     const val daggerHilt = "2.28-alpha"
+    const val hiltLifeCycleViewModel = "1.0.0-alpha01"
     const val coroutines = "1.3.3"
     const val gson = "2.8.6"
     const val legacySupport = "1.0.0"
@@ -145,6 +146,7 @@ object Dependencies {
     const val lifecycleViewModelKts = "androidx.lifecycle:lifecycle-viewmodel-ktx:${DepVersions.navLifecycle}"
     const val lifecycleCommonJava8 = "androidx.lifecycle:lifecycle-common-java8:${DepVersions.navLifecycle}"
     const val legacySupport = "androidx.legacy:legacy-support-v4:${DepVersions.legacySupport}"
+    const val hiltLifeCycleViewModel = "androidx.hilt:hilt-lifecycle-viewmodel:${DepVersions.hiltLifeCycleViewModel}"
 
     //ViewPager2
     const val viewPager = "androidx.viewpager2:viewpager2:${DepVersions.viewPager}"

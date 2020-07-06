@@ -10,7 +10,7 @@ import javax.inject.Inject
  * For Atsam a Ikyenge project.
  */
 
-class ISongsRepoImpl @Inject constructor(
+class SongsRepoImpl @Inject constructor(
     private val songsDao: SongsDao
 ): ISongsRepo {
 

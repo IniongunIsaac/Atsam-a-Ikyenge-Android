@@ -10,7 +10,7 @@ import javax.inject.Inject
  * For Atsam a Ikyenge project.
  */
 
-class FavoriteRepoImpl @Inject constructor(
+class FavoritesRepoImpl @Inject constructor(
     private val favoriteDao: FavoriteDao
 ): IFavoritesRepo {
 

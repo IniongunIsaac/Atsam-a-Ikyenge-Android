@@ -32,13 +32,13 @@ import com.iniongungroup.mobile.droid.atsamaikyenge.localdatasource.utils.LocalD
 
 abstract class AppDatabase : RoomDatabase() {
 
-    abstract fun fontStyleDao(): FontStyleDao
+    abstract fun fontStylesDao(): FontStyleDao
 
-    abstract fun settingDao(): SettingsDao
+    abstract fun settingsDao(): SettingsDao
 
-    abstract fun themeDao(): ThemeDao
+    abstract fun themesDao(): ThemeDao
 
-    abstract fun songDao(): SongsDao
+    abstract fun songsDao(): SongsDao
 
     abstract fun favoritesDao(): FavoriteDao
 
