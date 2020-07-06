@@ -15,6 +15,7 @@ data class Song(
     @PrimaryKey val id: String = UUID.randomUUID().toString(),
     val title: String,
     val chorus: String,
+    val verses: List<String>,
     @ColumnInfo(name = "number_of_verses") val numberOfVerses: Int,
     val songNumber: Int
 )
