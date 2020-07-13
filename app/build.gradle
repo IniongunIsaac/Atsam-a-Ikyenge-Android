@@ -1,7 +1,7 @@
 apply plugin: 'com.android.application'
 apply plugin: 'com.google.firebase.appdistribution'
 apply plugin: 'io.fabric'
-apply plugin: 'dagger.hilt.android.plugin'
+//apply plugin: 'dagger.hilt.android.plugin'
 apply from: rootProject.file('android-modules-common-config.gradle')
 
 def keystorePropertiesFile = rootProject.file("keystore.properties")
@@ -91,8 +91,10 @@ dependencies {
 
             Dependencies.multiDex,
 
-            Dependencies.daggerHilt,
-            Dependencies.hiltLifeCycleViewModel,
+            Dependencies.dagger,
+            Dependencies.daggerAndroidSupport,
+            //Dependencies.daggerHilt,
+            //Dependencies.hiltLifeCycleViewModel,
 
             Dependencies.firebaseAnalytics,
             Dependencies.firebasePerformanceMonitoring,
@@ -107,7 +109,9 @@ dependencies {
     )
 
     kapt(
-            Dependencies.daggerHiltCompiler
+            //Dependencies.daggerHiltCompiler,
+            Dependencies.daggerCompiler,
+            Dependencies.daggerAndroidProcessor
     )
 
     testImplementation(

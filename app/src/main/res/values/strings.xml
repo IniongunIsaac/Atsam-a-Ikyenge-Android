@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">Atsam a Ikyenge</string>
+    <string name="atsam_a_sha_ikyenge">Atsam\n\na sha\n\nIkyenge</string>
+    <string name="setup_in_progress_please_wait_text">Setup in progress, please wait</string>
+    <string name="version">v 1.0</string>
+    <string name="atsam">Atsam</string>
+    <string name="ikyenge">Ikyenge</string>
+    <string name="a_sha">a sha</string>
 </resources>

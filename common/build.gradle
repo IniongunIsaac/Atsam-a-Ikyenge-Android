@@ -1,14 +1,13 @@
 apply from: rootProject.file('android-modules-common-config.gradle')
-apply plugin: 'dagger.hilt.android.plugin'
 
 android {
 
-    kotlinOptions {
-        jvmTarget = "1.8"
+    defaultConfig {
+        buildConfigField("String", "SONGS_NAV_INTENT", NavIntents.songs)
     }
 
-    dataBinding {
-        enabled = true
+    buildFeatures {
+        dataBinding = true
     }
 
 }
@@ -29,7 +28,8 @@ dependencies {
             Dependencies.rxJava,
             Dependencies.rxAndroid,
 
-            Dependencies.daggerHilt,
+            Dependencies.dagger,
+            Dependencies.daggerAndroidSupport,
 
             Dependencies.threeTenAndroidBackport
     )

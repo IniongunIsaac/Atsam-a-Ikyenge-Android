@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "347241247932",
-    "firebase_url": "https://atsam-a-ikyenge.firebaseio.com",
-    "project_id": "atsam-a-ikyenge",
-    "storage_bucket": "atsam-a-ikyenge.appspot.com"
+    "project_number": "777832581175",
+    "firebase_url": "https://tiv-hymns-i.firebaseio.com",
+    "project_id": "tiv-hymns-i",
+    "storage_bucket": "tiv-hymns-i.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:347241247932:android:d8a04aaaa854821803ccb9",
+        "mobilesdk_app_id": "1:777832581175:android:1fd8c756d9d2bea03fd7b2",
         "android_client_info": {
-          "package_name": "com.iniongungroup.mobile.droid.atsamaikyenge"
+          "package_name": "com.iniongungroup.mobile.droid.tivhymnsi"
         }
       },
       "oauth_client": [
         {
-          "client_id": "347241247932-d62bruns53c2kh57oompu9l70m2n2boj.apps.googleusercontent.com",
+          "client_id": "777832581175-547nsj4p4iss1s9blqvs98num249lgmq.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBwBTY41-FZ44s16zknXHLG5ENJsLKTNSo"
+          "current_key": "AIzaSyC0QWKpRY7tni3H7zj6QfZadtbUeBUfZH4"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "347241247932-d62bruns53c2kh57oompu9l70m2n2boj.apps.googleusercontent.com",
+              "client_id": "777832581175-547nsj4p4iss1s9blqvs98num249lgmq.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

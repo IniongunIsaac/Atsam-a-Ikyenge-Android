@@ -1,6 +1,6 @@
 apply from: rootProject.file('android-modules-common-config.gradle')
 apply plugin: 'androidx.navigation.safeargs'
-apply plugin: 'dagger.hilt.android.plugin'
+//apply plugin: 'dagger.hilt.android.plugin'
 
 android {
 
@@ -41,15 +41,13 @@ dependencies {
 
             Dependencies.daggerHilt,
             Dependencies.hiltLifeCycleViewModel,
+            Dependencies.dagger,
+            Dependencies.daggerAndroidSupport,
 
             Dependencies.threeTenAndroidBackport,
 
             project(Modules.repository),
             project(Modules.entities),
             project(Modules.common)
-    )
-
-    kapt(
-            Dependencies.daggerHiltCompiler
     )
 }
