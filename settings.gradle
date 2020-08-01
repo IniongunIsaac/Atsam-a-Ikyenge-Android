@@ -5,4 +5,4 @@ include ':repository'
 include ':preferences'
 include ':entities'
 include ':app'
-rootProject.name = "Tiv Hymns I"
+rootProject.name = "Tiv Hymns"

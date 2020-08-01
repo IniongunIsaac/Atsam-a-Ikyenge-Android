@@ -5,7 +5,7 @@
 
 object DepVersions {
 
-    const val applicationId = "com.iniongungroup.mobile.droid.tivhymnsi"
+    const val applicationId = "com.iniongungroup.mobile.droid.tivhymns"
 
     const val targetSdkVersion = 29
     const val compileSdkVersion = 29
@@ -74,7 +74,7 @@ object DepVersions {
 }
 
 object NavIntents {
-    const val songs = "\"com.iniongungroup.mobile.droid.tivhymnsi.songs.start\""
+    const val songs = "\"com.iniongungroup.mobile.droid.tivhymns.songs.start\""
     var homeIntent = songs.replace("\"", "")
 }
 

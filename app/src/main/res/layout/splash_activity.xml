@@ -6,7 +6,7 @@
     <data>
         <variable
             name="viewModel"
-            type="com.iniongungroup.mobile.droid.tivhymnsi.presentation.SplashActivityViewModel" />
+            type="com.iniongungroup.mobile.droid.tivhymns.presentation.SplashActivityViewModel" />
     </data>
 
     <androidx.constraintlayout.widget.ConstraintLayout
