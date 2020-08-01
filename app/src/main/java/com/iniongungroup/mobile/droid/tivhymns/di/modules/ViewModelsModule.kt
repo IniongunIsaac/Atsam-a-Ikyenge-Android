@@ -5,6 +5,7 @@ import com.iniongungroup.mobile.droid.tivhymns.common.base.BaseViewModel
 import com.iniongungroup.mobile.droid.tivhymns.di.keys.AppViewModelKey
 import com.iniongungroup.mobile.droid.tivhymns.di.viewmodelfactory.ViewModelFactory
 import com.iniongungroup.mobile.droid.tivhymns.presentation.SplashActivityViewModel
+import com.iniongungroup.mobile.droid.tivhymns.songs.SongsActivityViewModel
 import dagger.Binds
 import dagger.Module
 import dagger.multibindings.IntoMap
@@ -27,6 +28,13 @@ abstract class ViewModelsModule {
     @AppViewModelKey(SplashActivityViewModel::class)
     abstract fun bindSplashActivityViewModel(
         viewModel: SplashActivityViewModel
+    ): BaseViewModel
+
+    @Binds
+    @IntoMap
+    @AppViewModelKey(SongsActivityViewModel::class)
+    abstract fun bindSongsActivityViewModel(
+        viewModel: SongsActivityViewModel
     ): BaseViewModel
 
 }

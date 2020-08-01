@@ -2,6 +2,7 @@ package com.iniongungroup.mobile.droid.tivhymns.di.modules
 
 import com.iniongungroup.mobile.droid.tivhymns.di.scopes.PerActivity
 import com.iniongungroup.mobile.droid.tivhymns.presentation.SplashActivity
+import com.iniongungroup.mobile.droid.tivhymns.songs.SongsActivity
 import dagger.Module
 import dagger.android.ContributesAndroidInjector
 
@@ -17,8 +18,8 @@ abstract class AppActivityBindingModule {
     @ContributesAndroidInjector
     internal abstract fun bindSplashActivity(): SplashActivity
 
-//    @PerActivity
-//    @ContributesAndroidInjector
-//    internal abstract fun bindHomeActivity(): HomeActivity
+    @PerActivity
+    @ContributesAndroidInjector
+    internal abstract fun bindSongsActivity(): SongsActivity
 
 }
