@@ -109,6 +109,10 @@ abstract class BaseFragment<in D : ViewDataBinding, out V : BaseViewModel> : Dag
         findNavController().navigate(navDirection)
     }
 
+    protected fun navigateBack() {
+        findNavController().navigateUp()
+    }
+
     fun hideKeyBoard(token: IBinder) {
         val inputMethodManager = activity?.getSystemService<InputMethodManager>()
         inputMethodManager?.hideSoftInputFromWindow(token, 0)

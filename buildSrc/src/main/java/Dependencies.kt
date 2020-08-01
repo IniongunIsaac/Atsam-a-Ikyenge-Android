@@ -19,7 +19,7 @@ object DepVersions {
     const val jaxb = "2.3.1"
 
     const val kotlin = "1.3.72"
-    const val gradle = "4.0.0"
+    const val gradle = "4.0.1"
     const val navLifecycle = "2.1.0"
     const val appCompat = "1.1.0"
     const val androidXCoreKts = "1.3.0"

@@ -1,34 +1,34 @@
 {
   "project_info": {
-    "project_number": "777832581175",
-    "firebase_url": "https://tiv-hymns-i.firebaseio.com",
-    "project_id": "tiv-hymns-i",
-    "storage_bucket": "tiv-hymns-i.appspot.com"
+    "project_number": "513710397383",
+    "firebase_url": "https://tiv-hymns.firebaseio.com",
+    "project_id": "tiv-hymns",
+    "storage_bucket": "tiv-hymns.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:777832581175:android:1fd8c756d9d2bea03fd7b2",
+        "mobilesdk_app_id": "1:513710397383:android:19006798c43276f1dc2be2",
         "android_client_info": {
-          "package_name": "com.iniongungroup.mobile.droid.tivhymnsi"
+          "package_name": "com.iniongungroup.mobile.droid.tivhymns"
         }
       },
       "oauth_client": [
         {
-          "client_id": "777832581175-547nsj4p4iss1s9blqvs98num249lgmq.apps.googleusercontent.com",
+          "client_id": "513710397383-h0bcbng7holfrhrfoi7a17231lmsu1ri.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC0QWKpRY7tni3H7zj6QfZadtbUeBUfZH4"
+          "current_key": "AIzaSyCa3d0f4oBIfpZBYBA3o6kVCd6gnnJ53tw"
         }
       ],
       "services": {
         "appinvite_service": {
           "other_platform_oauth_client": [
             {
-              "client_id": "777832581175-547nsj4p4iss1s9blqvs98num249lgmq.apps.googleusercontent.com",
+              "client_id": "513710397383-h0bcbng7holfrhrfoi7a17231lmsu1ri.apps.googleusercontent.com",
               "client_type": 3
             }
           ]
